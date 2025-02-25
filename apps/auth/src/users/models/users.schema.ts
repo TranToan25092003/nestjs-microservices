@@ -5,10 +5,10 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 @Schema({ versionKey: false })
 export class UsersDocument extends AbstractDocument {
   @Prop()
-  email: String;
+  email: string;
 
   @Prop()
-  password: String;
+  password: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(UsersDocument);
